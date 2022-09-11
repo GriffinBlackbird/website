@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Thoughts :)</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/thoughts.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <h3>SCROLL DOWN</h3>
+  <h2 class='Text'>OMG HIIIIIIIIIIII BEAUTIFUL!</h2>
+  <section>
+
+    <h2 class='InnerText'>OMG HIIIIIIIIIIII BEAUTIFUL!</h2>
+    <div class="heart"></div>
+
+  </section>
+  <div class="container">
+    <h2>Revealations 1:1</h2>
+    <p>
+      What? Friendship? C'mon I am not gonna get friend-zoned by a girl who likes me like she would die without it (okay maybe not really since I am not the important, let's just assume I am for now.). I have no fucking clue to what I am doing or what I want from this, but holy last few days have been hell, you have been creeping on my mind like a beautiful wildflower, untamed and free,
+      and its about time I stop lying to myself and get out of this oblivion.
+      I know I know, few weeks ago I was on a different ground, I have always wished to find someone who would appreaicate my presence rather than destroying it, you have grown on me. I have lived the past few months completely alone, seclusion ate me away, I was done with the idea of liking someone for now. Recently after getting to know you more, all of a sudden I wanna experience the world through your eyes because,no matter how dark your life is, you still fill mine with colors (you can prolly feel this by my bad color choices here). You manage your challenges so well, I am proud of you. There is this line from a book "She is my kaleidoscope in a world of gray." I really love this line.
+      Distance just seems to be an ugly amount of numbers right now, hm. Oh and btw, the background image is completley apt here. First of all I wansn't ready for all of this but still you somehow came out of nowhere, and left me with no choice except slowly developing a crush on you.
+      There is alot I would want to say but somehow my code only allows these many words ROFL.
+      To sum everything up, I like this dReAdfUl gIrl.
+
+
+
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+    </p>
+  </div>
+  <script>
+    let section = document.querySelector('section');
+    let Text = document.querySelector('.Text')
+    let InnerText = document.querySelector('.InnerText')
+    window.addEventListener('scroll', function() {
+      let value = window.scrollY;
+      section.style.clipPath = "circle("+ value +"px at center center"
+      Text.style.left = 100 - value / 5 + '%';
+      InnerText.style.left = 100 - value / 5 + '%';
+    })
+  </script>
+</body>
+</html>
